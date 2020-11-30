@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0px;
+    background-color: #03cffc ;
+}
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 40px;
+}
+.medsos ul li a:hover {
+    color: black;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding: 15px 0;
+    color: #03cffc;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    display: inline-block;
+    padding: 25px 20px;
+}
+header ul li a:hover {
+     background-color: #03cffc;
+     color: white; 
+}
+.active {
+    background-color: #03cffc;
+    color: white; 
+}
+.banner {
+    height: 60vh;
+    background-image: url("../img/banner home.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2 {
+    color: black;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid black;
+}
+.banner:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 206, 252, .6);
+}
+section {
+    padding: 50px 0;
+}
+footer {
+    padding: 30px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width: 200px;
+    padding: 20px;
+}
+.pindex {
+    text-align: center;
+    padding: 10px;
+}
+.profil {
+    text-align: center;
+    color: black;
+}
+.profil h3 {
+    color: #03cffc;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.label {
+    background-color: #03cffc;
+    color: white;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #03cffc;
+    border-right-color: #03cffc;
+    border-bottom-color: #03cffc;
+    animation: putaran .8s linear infinite;
+}
+@keyframes putaran {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.galeri {
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+.galeri h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.kontak .baris {
+    text-align: center;
+    margin-top: 25px;
+}
+.kontak {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+h4 {
+    color: #03cffc;
+}
